@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/eternal-entropy-generation/static/js/bundle.js",
+    "main.js.map": "/eternal-entropy-generation/static/js/bundle.js.map",
+    "index.html": "/eternal-entropy-generation/index.html",
+    "precache-manifest.b99b0d00d96ca202c0e2556b94a7fe90.js": "/eternal-entropy-generation/precache-manifest.b99b0d00d96ca202c0e2556b94a7fe90.js",
+    "service-worker.js": "/eternal-entropy-generation/service-worker.js",
+    "static/js/bundle.js.LICENSE.txt": "/eternal-entropy-generation/static/js/bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/bundle.js"
+  ]
+}
