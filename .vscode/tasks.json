@@ -6,7 +6,10 @@
     {
       "label": "npm start",
       "type": "shell",
-      "command": "npm start"
+      "command": "npm start",
+      "problemMatcher": [
+        "$eslint-compact"
+      ]
     },
     {
       "label": "npm run build",

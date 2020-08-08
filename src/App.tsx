@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useReducer, useState } from 'react';
 import {
   AppBar,
   Box,
@@ -13,12 +13,18 @@ import Outcome from '@src/components/outcome/outcome';
 
 const App = () => {
   const [rollData, setRollData] = useState([] as Die[]);
+  const [, forceUpdate] = useReducer((x) => x + 1, 0);
+
+  const handleRollData = (dice: Die[]) => {
+    setRollData(dice);
+    forceUpdate();
+  };
 
   return (
     <div className="App">
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6"> Dice Stuff</Typography>
+          <Typography variant="h6">Eternal Entropy Generation</Typography>
         </Toolbar>
       </AppBar>
 
@@ -27,7 +33,7 @@ const App = () => {
           <Paper variant="outlined">
             <Grid container>
               <Grid item xs={4}>
-                <Roll handleRoll={setRollData} />
+                <Roll handleRoll={handleRollData} />
               </Grid>
               <Grid item xs={8}>
                 <Outcome rollData={rollData} />

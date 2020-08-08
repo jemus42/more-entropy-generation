@@ -12,7 +12,8 @@ const Roll = (props: RollProps) => {
     { count: 0, label: 'D8', sides: 8 },
     { count: 0, label: 'D10', sides: 10 },
     { count: 0, label: 'D12', sides: 12 },
-    { count: 0, label: 'D20', sides: 20 }
+    { count: 0, label: 'D20', sides: 20 },
+    { count: 0, label: 'D100', sides: 100 }
   ];
   const [dice, setDice] = useState(initialDiceState as Die[]);
 
@@ -26,9 +27,9 @@ const Roll = (props: RollProps) => {
     });
   };
 
-  const resetDice = () => {
-    setDice(initialDiceState);
-  };
+  // const resetDice = () => {
+  //   setDice(initialDiceState);
+  // };
 
   const renderInputPerDie = () => {
     return Object.keys(dice).map((die, index) => {
@@ -53,7 +54,7 @@ const Roll = (props: RollProps) => {
       );
     });
   };
-
+  
   return (
     <>
       {renderInputPerDie()}
@@ -65,10 +66,10 @@ const Roll = (props: RollProps) => {
           component="button"
           onClick={() => {
             props.handleRoll(dice);
-            resetDice();
+            // resetDice();
           }}
         >
-          Roll! <small>(and reset the inputs)</small>
+          Roll! {/*&nbsp;<small>(and reset the inputs)</small>*/}
         </Button>
       </Box>
     </>
