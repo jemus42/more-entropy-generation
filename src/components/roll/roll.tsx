@@ -27,10 +27,6 @@ const Roll = (props: RollProps) => {
     });
   };
 
-  // const resetDice = () => {
-  //   setDice(initialDiceState);
-  // };
-
   const renderInputPerDie = () => {
     return Object.keys(dice).map((die, index) => {
       return (
@@ -54,7 +50,7 @@ const Roll = (props: RollProps) => {
       );
     });
   };
-  
+
   return (
     <>
       {renderInputPerDie()}
@@ -66,10 +62,9 @@ const Roll = (props: RollProps) => {
           component="button"
           onClick={() => {
             props.handleRoll(dice);
-            // resetDice();
           }}
         >
-          Roll! {/*&nbsp;<small>(and reset the inputs)</small>*/}
+          Roll!
         </Button>
       </Box>
     </>
