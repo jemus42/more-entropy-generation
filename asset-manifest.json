@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/eternal-entropy-generation/static/js/bundle.js",
-    "main.js.map": "/eternal-entropy-generation/static/js/bundle.js.map",
-    "index.html": "/eternal-entropy-generation/index.html",
-    "precache-manifest.b99b0d00d96ca202c0e2556b94a7fe90.js": "/eternal-entropy-generation/precache-manifest.b99b0d00d96ca202c0e2556b94a7fe90.js",
-    "service-worker.js": "/eternal-entropy-generation/service-worker.js",
-    "static/js/bundle.js.LICENSE.txt": "/eternal-entropy-generation/static/js/bundle.js.LICENSE.txt"
+    "main.js": "/more-entropy-generation/static/js/bundle.js",
+    "main.js.map": "/more-entropy-generation/static/js/bundle.js.map",
+    "index.html": "/more-entropy-generation/index.html",
+    "precache-manifest.9858f0a21ce8336564849dcc9c717e99.js": "/more-entropy-generation/precache-manifest.9858f0a21ce8336564849dcc9c717e99.js",
+    "service-worker.js": "/more-entropy-generation/service-worker.js",
+    "static/js/bundle.js.LICENSE.txt": "/more-entropy-generation/static/js/bundle.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/bundle.js"
