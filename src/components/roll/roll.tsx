@@ -62,7 +62,7 @@ const Roll = (props: RollProps) => {
     return () => {
       document.removeEventListener('keydown', listener);
     };
-  }, []);
+  }, [dice, props]);
 
   return (
     <>
