@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react';
+import React, { ChangeEvent, useState, useEffect } from 'react';
 import { Box, Button, FormControl, TextField } from '@material-ui/core';
 
 interface RollProps {
@@ -50,6 +50,19 @@ const Roll = (props: RollProps) => {
       );
     });
   };
+
+  useEffect(() => {
+    const listener = (event: { code: string; }) => {
+      if (event.code === "Enter" || event.code === "NumpadEnter") {
+        console.log("Enter key was pressed. Run your function.");
+        props.handleRoll(dice);
+      }
+    };
+    document.addEventListener('keydown', listener);
+    return () => {
+      document.removeEventListener('keydown', listener);
+    };
+  }, []);
 
   return (
     <>
